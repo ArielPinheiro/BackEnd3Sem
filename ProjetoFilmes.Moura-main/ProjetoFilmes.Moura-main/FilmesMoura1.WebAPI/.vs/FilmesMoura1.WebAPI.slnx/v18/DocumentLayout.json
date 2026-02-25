@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|c:\\users\\51478718889\\downloads\\projetofilmes.moura-main\\projetofilmes.moura-main\\filmesmoura1.webapi\\controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|solutionrelative:controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|c:\\users\\51478718889\\downloads\\projetofilmes.moura-main\\projetofilmes.moura-main\\filmesmoura1.webapi\\repositories\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|solutionrelative:repositories\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|c:\\users\\51478718889\\downloads\\projetofilmes.moura-main\\projetofilmes.moura-main\\filmesmoura1.webapi\\repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|solutionrelative:repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|c:\\users\\51478718889\\downloads\\projetofilmes.moura-main\\projetofilmes.moura-main\\filmesmoura1.webapi\\interfaces\\igenerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|solutionrelative:interfaces\\igenerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|c:\\users\\51478718889\\downloads\\projetofilmes.moura-main\\projetofilmes.moura-main\\filmesmoura1.webapi\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E4AC3C-6C0D-F71E-E4DF-255395538735}|FilmesMoura1.WebAPI.csproj|solutionrelative:controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FilmeController.cs",
+              "DocumentMoniker": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Controllers\\FilmeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FilmeController.cs",
+              "ToolTip": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Controllers\\FilmeController.cs",
+              "RelativeToolTip": "Controllers\\FilmeController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAkwE8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T16:43:46.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GeneroController.cs",
+              "DocumentMoniker": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Controllers\\GeneroController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GeneroController.cs",
+              "ToolTip": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Controllers\\GeneroController.cs",
+              "RelativeToolTip": "Controllers\\GeneroController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T16:27:45.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FilmeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Repositories\\FilmeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\FilmeRepository.cs",
+              "ToolTip": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Repositories\\FilmeRepository.cs",
+              "RelativeToolTip": "Repositories\\FilmeRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T16:10:52.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GeneroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Repositories\\GeneroRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\GeneroRepository.cs",
+              "ToolTip": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Repositories\\GeneroRepository.cs",
+              "RelativeToolTip": "Repositories\\GeneroRepository.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowF8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T12:01:01.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IGeneroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Interfaces\\IGeneroRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IGeneroRepository.cs",
+              "ToolTip": "C:\\Users\\51478718889\\Downloads\\ProjetoFilmes.Moura-main\\ProjetoFilmes.Moura-main\\FilmesMoura1.WebAPI\\Interfaces\\IGeneroRepository.cs",
+              "RelativeToolTip": "Interfaces\\IGeneroRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T14:03:51.954Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
