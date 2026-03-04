@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using FilmesMoura1.WebAPI.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilmesMoura1.WebAPI.Models;
