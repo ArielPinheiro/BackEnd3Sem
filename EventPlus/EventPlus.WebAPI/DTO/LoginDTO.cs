@@ -1,0 +1,12 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EventPlus.WebAPI.DTO
+{
+    public class LoginDTO
+    {
+        [Required(ErrorMessage = "O Email Do Usuario É Obrigatorio!")]
+        public string? Email { get; set; }
+        [Required(ErrorMessage = "A Senha Do Usuario É Obrigatorio!")]
+        public string? Senha { get; set; }
+    }
+}
