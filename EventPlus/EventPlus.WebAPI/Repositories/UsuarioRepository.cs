@@ -21,7 +21,7 @@ public class UsuarioRepository : IUsuarioRepository
     /// <param name="Email">Email do Usuario</param>
     /// <param name="Senha">Senha do Usuario</param>
     /// <returns>Retorna o Usuario buscado e validado</returns>
-    public Usuario BuscarPorEmailESenha(string Email, string Senha)
+    public Usuario BuscarPorEmailESenha(string Email, string Senha, string Titulo)
     {
         //Primeiro Buscamos o Usuario Pelo Email
         var usuarioBuscado = _context.Usuarios.Include(usuario => usuario.IdTipoUsuarioNavigation).FirstOrDefault(usuario => usuario.Email == Email);
@@ -58,4 +58,5 @@ public class UsuarioRepository : IUsuarioRepository
         _context.Usuarios.Add(usuario);
         _context.SaveChanges();
     }
+    
 }

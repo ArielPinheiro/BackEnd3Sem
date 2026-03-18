@@ -23,17 +23,15 @@ public class LoginController : ControllerBase
         _usuarioRepository = usuarioRepository;
     }
     [HttpPost]
-
     public IActionResult Login(LoginDTO loginDto)
     {
         try
         {
-            Usuario usuarioBuscado = _usuarioRepository.BuscarPorEmailESenha(loginDto.Email!, loginDto.Senha!);
+            Usuario usuarioBuscado = _usuarioRepository.BuscarPorEmailESenha(loginDto.Email!, loginDto.Senha!, loginDto.Titulo!);
             if (usuarioBuscado == null)
             {
                 return NotFound("Email ou Senha Inválidos");
             }
-
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
@@ -43,8 +41,8 @@ public class LoginController : ControllerBase
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: "api_filmes",
-                audience: "api_filmes",
+                issuer: "api_events",
+                audience: "api_events",
                 claims: claims,
                 expires: DateTime.Now.AddMinutes(5),
                 signingCredentials: creds
@@ -58,5 +56,5 @@ public class LoginController : ControllerBase
         {
             return BadRequest(e.Message);
         }
-    }
+    } 
 }
