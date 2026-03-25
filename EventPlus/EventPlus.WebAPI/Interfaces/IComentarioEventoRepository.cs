@@ -8,5 +8,4 @@ public interface IComentarioEventoRepository
     List<ComentarioEvento> Listar();
     ComentarioEvento BuscarPorIdUsuario(Guid IdUsuario);
     List<ComentarioEvento> ListarSomenteExibe(Guid IdEvento);
- 
 }
