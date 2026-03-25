@@ -15,7 +15,7 @@ public partial class ComentarioEvento
     [Column(TypeName = "datetime")]
     public DateTime DataComentarioEvent { get; set; }
 
-    [StringLength(1)]
+    [StringLength(200)]
     public string Descricao { get; set; } = null!;
 
     public bool Exibe { get; set; }

@@ -11,6 +11,8 @@ using Microsoft.OpenApi;
 using System.IdentityModel.Tokens.Jwt;
 using System.Reflection.Metadata;
 using System.Security.Claims;
+using Azure.AI.ContentSafety;
+using EventPlus.WebApi.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +27,15 @@ builder.Services.AddScoped<ITipoUsuarioRepository, TipoUsuarioRepository>();
 builder.Services.AddScoped<IInstituicaoRepository, InstituicaoRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IEventoRepository, EventoRepository>();
+builder.Services.AddScoped<IPresencaRepository, PresencaRepository>();
+builder.Services.AddScoped<IComentarioEventoRepository, ComentarioEventoRepository>();
+
+//Configurando o azure content safety
+var endpoint = "";
+var apikey = "";
+var client = new ContentSafetyClient(new Uri(endpoint), new Azure.AzureKeyCredential(apikey));
+builder.Services.AddSingleton(client);
+
 //adiciona o Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(Options =>

@@ -38,13 +38,13 @@ public partial class EventContext : DbContext
     {
         modelBuilder.Entity<ComentarioEvento>(entity =>
         {
-            entity.HasKey(e => e.IdComentarioEvento).HasName("PK__Comentar__4305A1F1328FCA2C");
+            entity.HasKey(e => e.IdComentarioEvento).HasName("PK__Comentar__4305A1F1861F0832");
 
             entity.Property(e => e.IdComentarioEvento).HasDefaultValueSql("(newid())");
 
-            entity.HasOne(d => d.IdEventoNavigation).WithMany(p => p.ComentarioEventos).HasConstraintName("FK__Comentari__IdEve__70DDC3D8");
+            entity.HasOne(d => d.IdEventoNavigation).WithMany(p => p.ComentarioEventos).HasConstraintName("FK__Comentari__IdEve__04E4BC85");
 
-            entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.ComentarioEventos).HasConstraintName("FK__Comentari__IdUsu__6FE99F9F");
+            entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.ComentarioEventos).HasConstraintName("FK__Comentari__IdUsu__03F0984C");
         });
 
         modelBuilder.Entity<Evento>(entity =>

@@ -10,7 +10,8 @@ namespace EventPlus.WebAPI.Controllers;
 [ApiController]
 public class PresencaController : ControllerBase
 {
-    private IPresencaRepository _presencaRepository;
+    private readonly IPresencaRepository _presencaRepository;
+
     public PresencaController(IPresencaRepository presencaRepository)
     {
         _presencaRepository = presencaRepository;

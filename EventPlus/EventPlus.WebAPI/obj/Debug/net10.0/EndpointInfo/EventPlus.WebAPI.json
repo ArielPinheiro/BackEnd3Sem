@@ -15,6 +15,114 @@
     "version": "v1"
   },
   "paths": {
+    "/api/ComentarioEvento": {
+      "post": {
+        "tags": [
+          "ComentarioEvento"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ComentarioEventoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ComentarioEventoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ComentarioEventoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "ComentarioEvento"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ComentarioEvento/BuscarPorIdDeUsuario": {
+      "get": {
+        "tags": [
+          "ComentarioEvento"
+        ],
+        "parameters": [
+          {
+            "name": "idUsuario",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ComentarioEvento/ListarSomenteExibe": {
+      "get": {
+        "tags": [
+          "ComentarioEvento"
+        ],
+        "parameters": [
+          {
+            "name": "IdEvento",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ComentarioEvento/{id}": {
+      "delete": {
+        "tags": [
+          "ComentarioEvento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Evento/Usuario/{idUsuario}": {
       "get": {
         "tags": [
@@ -777,11 +885,78 @@
             "description": "OK"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     }
   },
   "components": {
     "schemas": {
+      "ComentarioEvento": {
+        "type": "object",
+        "properties": {
+          "idComentarioEvento": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "dataComentarioEvent": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "descricao": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "exibe": {
+            "type": "boolean"
+          },
+          "idUsuario": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "idEvento": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "idEventoNavigation": {
+            "$ref": "#/components/schemas/Evento"
+          },
+          "idUsuarioNavigation": {
+            "$ref": "#/components/schemas/Usuario"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ComentarioEventoDTO": {
+        "type": "object",
+        "properties": {
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "idUsuario": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "idEvento": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
       "Evento": {
         "type": "object",
         "properties": {
@@ -813,11 +988,25 @@
             "format": "uuid",
             "nullable": true
           },
+          "comentarioEventos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComentarioEvento"
+            },
+            "nullable": true
+          },
           "idInstituicaoNavigation": {
             "$ref": "#/components/schemas/Instituicao"
           },
           "idTipoEventoNavigation": {
             "$ref": "#/components/schemas/TipoEvento"
+          },
+          "presencas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Presenca"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -877,6 +1066,13 @@
             "maxLength": 14,
             "minLength": 0,
             "type": "string",
+            "nullable": true
+          },
+          "eventos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Evento"
+            },
             "nullable": true
           }
         },
@@ -986,6 +1182,13 @@
             "minLength": 0,
             "type": "string",
             "nullable": true
+          },
+          "eventos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Evento"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1014,6 +1217,13 @@
             "maxLength": 100,
             "minLength": 0,
             "type": "string",
+            "nullable": true
+          },
+          "usuarios": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Usuario"
+            },
             "nullable": true
           }
         },
@@ -1062,8 +1272,22 @@
             "format": "uuid",
             "nullable": true
           },
+          "comentarioEventos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComentarioEvento"
+            },
+            "nullable": true
+          },
           "idTipoUsuarioNavigation": {
             "$ref": "#/components/schemas/TipoUsuario"
+          },
+          "presencas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Presenca"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1111,6 +1335,9 @@
     }
   ],
   "tags": [
+    {
+      "name": "ComentarioEvento"
+    },
     {
       "name": "Evento"
     },

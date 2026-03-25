@@ -1,5 +1,6 @@
 ﻿namespace EventPlus.WebAPI.Utils;
 
+
 public static class Criptografia
 {
     public static string GerarHash(string senha)
@@ -10,5 +11,4 @@ public static class Criptografia
     {
         return BCrypt.Net.BCrypt.Verify(senhaInformada, senhaBanco);
     }
-
 }
