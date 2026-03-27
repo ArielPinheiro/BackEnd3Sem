@@ -16,30 +16,49 @@ namespace ConnectPlus.Controllers
             _contatoRepository = contatoRepository;
         }
 
-
         /// <summary>
-        /// Cria um novo contato com base nos dados fornecidos no ContatoDTO e o cadastra usando o repositório de contatos. Retorna uma resposta indicando o sucesso ou falha da operação.
+        /// EndPoint da API que cadastra um novo contato
         /// </summary>
-        /// <param name="contatoDTO"></param>
-        /// <returns>Retorna um contato cadastrado</returns>
+        /// <param name="contato">Contato a ser cadastrado</param>
+        /// <returns>O contato foi cadastrado com sucesso, Status Code 201</returns>
         [HttpPost]
-        public IActionResult Cadastrar(ContatoDTO contatoDTO)
+        public async Task<IActionResult> Cadastrar([FromForm] ContatoDTO contato)
         {
             try
             {
-                var contato = new Contato
+                var novoContato = new Contato
                 {
-                    Nome = contatoDTO.Nome,
-                    FormaContato = contatoDTO.FormaContato,
-                    Imagem = contatoDTO.Imagem,
-                    IdTipoContato = contatoDTO.IdTipoContato
+                    Nome = contato.Nome!,
+                    FormaContato = contato.FormaContato!,
+                    IdTipoContato = contato.IdTipoContato
                 };
-                _contatoRepository.Cadastrar(contato);
-                return Ok("Contato cadastrado com sucesso!");
+
+                if (contato.Imagem != null && contato.Imagem.Length > 0)
+                {
+                    var extensao = Path.GetExtension(contato.Imagem.FileName);
+                    var nomeArquivo = $"{Guid.NewGuid()}{extensao}";
+                    var pastaRelativa = "wwwroot/imagens";
+                    var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), pastaRelativa);
+
+                    if (!Directory.Exists(caminhoPasta))
+                        Directory.CreateDirectory(caminhoPasta);
+
+                    var caminhoCompleto = Path.Combine(caminhoPasta, nomeArquivo);
+
+                    using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
+                    {
+                        await contato.Imagem.CopyToAsync(stream);
+                    }
+
+                    novoContato.Imagem = nomeArquivo;
+                }
+
+                _contatoRepository.Cadastrar(novoContato);
+                return StatusCode(201);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(e.Message);
             }
         }
         /// <summary>
@@ -60,31 +79,52 @@ namespace ConnectPlus.Controllers
             }
         }
         /// <summary>
-        /// atualiza um contato existente com base no ID fornecido e nos dados do ContatoDTO
+        /// EndPoint da API que atualiza os dados de um contato já existente
         /// </summary>
-        /// <param name="id">Id do contato</param>
-        /// <param name="contatoDTO">Contato DTO</param>
-        /// <returns>Retorna o contato Mudado apos a atualização</returns>
-        [HttpPut("{id}")]
-        public IActionResult Atualizar(Guid id, ContatoDTO contatoDTO)
+        /// <param name="Id">Id do contato a ser atualizado</param>
+        /// <param name="contato">Informacoes do contato a serem atualizadas</param>
+        /// <returns>O Contato atualizado e Status Code 204</returns>
+        [HttpPut("{Id}")]
+        public async Task<IActionResult> Atualizar(Guid Id, [FromForm] ContatoDTO contato)
         {
             try
             {
-                var contato = new Contato
+                var contatoBuscado = new Contato
                 {
-                    Nome = contatoDTO.Nome,
-                    FormaContato = contatoDTO.FormaContato,
-                    Imagem = contatoDTO.Imagem,
-                    IdTipoContato = contatoDTO.IdTipoContato
+                    Nome = contato.Nome!,
+                    FormaContato = contato.FormaContato!,
+                    IdTipoContato = contato.IdTipoContato
                 };
-                _contatoRepository.Atualizar(id, contato);
-                return Ok("Contato atualizado com sucesso!");
+
+                if (contato.Imagem != null && contato.Imagem.Length > 0)
+                {
+                    var extensao = Path.GetExtension(contato.Imagem.FileName);
+                    var nomeArquivo = $"{Guid.NewGuid()}{extensao}";
+                    var pastaRelativa = "wwwroot/imagens";
+                    var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), pastaRelativa);
+
+                    if (!Directory.Exists(caminhoPasta))
+                        Directory.CreateDirectory(caminhoPasta);
+
+                    var caminhoCompleto = Path.Combine(caminhoPasta, nomeArquivo);
+
+                    using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
+                    {
+                        await contato.Imagem.CopyToAsync(stream);
+                    }
+
+                    contatoBuscado.Imagem = nomeArquivo;
+                }
+
+                _contatoRepository.Atualizar(Id, contatoBuscado);
+                return StatusCode(204, contatoBuscado);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(e.Message);
             }
         }
+
         /// <summary>
         /// Deleta o contato correspondente ao ID fornecido usando o repositório de contatos
         /// </summary>

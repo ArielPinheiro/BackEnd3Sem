@@ -22,19 +22,46 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/ContatoDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ContatoDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ContatoDTO"
+                "type": "object",
+                "properties": {
+                  "IdContato": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "Nome": {
+                    "type": "string"
+                  },
+                  "FormaContato": {
+                    "type": "string"
+                  },
+                  "Imagem": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "IdTipoContato": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                }
+              },
+              "encoding": {
+                "IdContato": {
+                  "style": "form"
+                },
+                "Nome": {
+                  "style": "form"
+                },
+                "FormaContato": {
+                  "style": "form"
+                },
+                "Imagem": {
+                  "style": "form"
+                },
+                "IdTipoContato": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -56,14 +83,14 @@
         }
       }
     },
-    "/api/Contato/{id}": {
+    "/api/Contato/{Id}": {
       "put": {
         "tags": [
           "Contato"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
@@ -74,19 +101,46 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/ContatoDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ContatoDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ContatoDTO"
+                "type": "object",
+                "properties": {
+                  "IdContato": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "Nome": {
+                    "type": "string"
+                  },
+                  "FormaContato": {
+                    "type": "string"
+                  },
+                  "Imagem": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "IdTipoContato": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                }
+              },
+              "encoding": {
+                "IdContato": {
+                  "style": "form"
+                },
+                "Nome": {
+                  "style": "form"
+                },
+                "FormaContato": {
+                  "style": "form"
+                },
+                "Imagem": {
+                  "style": "form"
+                },
+                "IdTipoContato": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -96,7 +150,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Contato/{id}": {
       "delete": {
         "tags": [
           "Contato"
@@ -268,32 +324,6 @@
   },
   "components": {
     "schemas": {
-      "ContatoDTO": {
-        "type": "object",
-        "properties": {
-          "idContato": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "nome": {
-            "type": "string",
-            "nullable": true
-          },
-          "formaContato": {
-            "type": "string",
-            "nullable": true
-          },
-          "imagem": {
-            "type": "string",
-            "nullable": true
-          },
-          "idTipoContato": {
-            "type": "string",
-            "format": "uuid"
-          }
-        },
-        "additionalProperties": false
-      },
       "TipoContatoDTO": {
         "type": "object",
         "properties": {
