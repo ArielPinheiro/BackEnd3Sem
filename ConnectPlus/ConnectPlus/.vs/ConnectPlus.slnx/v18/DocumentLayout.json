@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{62D3E8AD-3C3A-D06F-888B-A5FF4A5F4AF2}|ConnectPlus.csproj|c:\\users\\51478718889\\desktop\\backend3sem\\connectplus\\connectplus\\controllers\\tipocontatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D3E8AD-3C3A-D06F-888B-A5FF4A5F4AF2}|ConnectPlus.csproj|solutionrelative:controllers\\tipocontatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{62D3E8AD-3C3A-D06F-888B-A5FF4A5F4AF2}|ConnectPlus.csproj|c:\\users\\51478718889\\desktop\\backend3sem\\connectplus\\connectplus\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62D3E8AD-3C3A-D06F-888B-A5FF4A5F4AF2}|ConnectPlus.csproj|solutionrelative:controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{62D3E8AD-3C3A-D06F-888B-A5FF4A5F4AF2}|ConnectPlus.csproj|solutionrelative:dto\\tipocontatodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62D3E8AD-3C3A-D06F-888B-A5FF4A5F4AF2}|ConnectPlus.csproj|c:\\users\\51478718889\\desktop\\backend3sem\\connectplus\\connectplus\\controllers\\tipocontatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62D3E8AD-3C3A-D06F-888B-A5FF4A5F4AF2}|ConnectPlus.csproj|solutionrelative:controllers\\tipocontatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{62D3E8AD-3C3A-D06F-888B-A5FF4A5F4AF2}|ConnectPlus.csproj|c:\\users\\51478718889\\desktop\\backend3sem\\connectplus\\connectplus\\repositories\\tipocontatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62D3E8AD-3C3A-D06F-888B-A5FF4A5F4AF2}|ConnectPlus.csproj|solutionrelative:repositories\\tipocontatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -54,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -67,25 +67,11 @@
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T14:23:01.402Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IContatoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Interfaces\\IContatoRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IContatoRepository.cs",
-              "ToolTip": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Interfaces\\IContatoRepository.cs",
-              "RelativeToolTip": "Interfaces\\IContatoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T17:40:04.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Contato.cs",
               "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Models\\Contato.cs",
               "RelativeDocumentMoniker": "Models\\Contato.cs",
@@ -93,12 +79,11 @@
               "RelativeToolTip": "Models\\Contato.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA+wBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T17:37:39.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T17:37:39.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TipoContato.cs",
               "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Models\\TipoContato.cs",
               "RelativeDocumentMoniker": "Models\\TipoContato.cs",
@@ -106,12 +91,11 @@
               "RelativeToolTip": "Models\\TipoContato.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T15:58:28.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T15:58:28.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ContatoRepository.cs",
               "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Repositories\\ContatoRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ContatoRepository.cs",
@@ -119,12 +103,11 @@
               "RelativeToolTip": "Repositories\\ContatoRepository.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAkwEAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:00:51.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T16:00:51.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ContatoController.cs",
               "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Controllers\\ContatoController.cs",
               "RelativeDocumentMoniker": "Controllers\\ContatoController.cs",
@@ -137,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ContatoDTO.cs",
               "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\DTO\\ContatoDTO.cs",
               "RelativeDocumentMoniker": "DTO\\ContatoDTO.cs",
@@ -145,12 +128,36 @@
               "RelativeToolTip": "DTO\\ContatoDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:39:32.696Z",
+              "WhenOpened": "2026-03-25T16:39:32.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TipoContatoController.cs",
+              "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Controllers\\TipoContatoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TipoContatoController.cs",
+              "ToolTip": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Controllers\\TipoContatoController.cs",
+              "RelativeToolTip": "Controllers\\TipoContatoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T16:50:55.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "IContatoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Interfaces\\IContatoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IContatoRepository.cs",
+              "ToolTip": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Interfaces\\IContatoRepository.cs",
+              "RelativeToolTip": "Interfaces\\IContatoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T17:40:04.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TipoContatoDTO.cs",
               "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\DTO\\TipoContatoDTO.cs",
               "RelativeDocumentMoniker": "DTO\\TipoContatoDTO.cs",
@@ -158,21 +165,7 @@
               "RelativeToolTip": "DTO\\TipoContatoDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:39:43.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TipoContatoController.cs",
-              "DocumentMoniker": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Controllers\\TipoContatoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TipoContatoController.cs",
-              "ToolTip": "C:\\Users\\51478718889\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\Controllers\\TipoContatoController.cs",
-              "RelativeToolTip": "Controllers\\TipoContatoController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAowGcAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:50:55.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T16:39:43.189Z"
             },
             {
               "$type": "Document",
@@ -184,8 +177,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-25T17:05:34.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T17:05:34.599Z"
             },
             {
               "$type": "Document",
@@ -197,8 +189,7 @@
               "RelativeToolTip": "Repositories\\TipoContatoRepository.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:16:10.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T16:16:10.228Z"
             }
           ]
         }
