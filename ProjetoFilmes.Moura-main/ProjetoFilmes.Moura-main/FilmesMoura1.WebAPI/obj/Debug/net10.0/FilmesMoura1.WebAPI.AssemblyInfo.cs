@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FilmesMoura1.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+586d5d871878134db8c84b27ec910ca3edd99dfd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1c27a938348766915c95ef7447af2b9b386574f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FilmesMoura1.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FilmesMoura1.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

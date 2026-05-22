@@ -1,2 +1,4 @@
 wwwroot\imagens\OIP.webp
 wwwroot\imagens\da2ab4c6-265a-43e9-8e72-a0d50891fef7.webp
+wwwroot\imagens\5c8cf998-2a60-4277-a451-9d0f79046cf5.webp
+wwwroot\imagens\b781ef4e-b2d2-4af3-ab76-10b752f0d933.webp
